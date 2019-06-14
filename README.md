@@ -16,3 +16,5 @@ const manageEmitter = new ManageEmitter({
 });
 ```
 
+*Pay Attention: this package will increase the Memory Leak Application to avoid possible problems. For more informations, visit the [EventEmitter Docs](https://nodejs.org/api/events.html).
+
