@@ -45,8 +45,6 @@ class ManageEmitter {
         const limit = this.getMaxListeners();
         const countProcess = this.listCountProcess();
 
-        console.log(chalk.magenta(`ManageEmitter REPORT: Your application has ${countProcess} process OPENED and the limit is ${limit}.`));
-
         if((limit - countProcess) > 3){
           console.log(chalk.green(`ManageEmitter STATUS: Everything is fine`));
         }         
