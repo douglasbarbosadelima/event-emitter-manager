@@ -16,5 +16,17 @@ const manageEmitter = new ManageEmitter({
 });
 ```
 
+- Enable methods:
+```js
+managerEmitter.listAllEvents() //Return an Array of events name.
+managerEmitter.listCountProcess() //Return a Number of events opened.
+manageEmitter.getMemoryInfo() //Return a Object with Application Memory informations.
+manageEmitter.getMaxListeners() //Return the max listeners enable by Node instance.
+manageEmitter.setLimitListener() //Set the max listeners enable by Node instance.
+manageEmitter.setLimitLess() //Set maxListeners to 0. Warning, this could affect your Application Healt.
+manageEmitter.manage() //Init ManageEmitter inspect.
+manageEmitter.clearManager() //Stop ManageEmitter verification.
+```
+
 *Pay Attention: this package will increase the Memory Leak Application to avoid possible problems. For more informations, visit the [EventEmitter Docs](https://nodejs.org/api/events.html).
 
