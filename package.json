@@ -1,8 +1,12 @@
 {
   "name": "event-emitter-manager",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "This package will provide auxiliary method's to manage EventEmitter and avoid possible Memory Leak problem.",
   "main": "app.js",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/douglasbarbosadelima/event-emitter-manager"
+  },
   "scripts": {
     "test": "mocha test/index.js",
     "coverage": "nyc npm run test"
