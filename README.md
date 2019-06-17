@@ -1,3 +1,18 @@
+<p>
+ <a href="https://david-dm.org/douglasbarbosadelima/event-emitter-manager">
+    <img src="https://david-dm.org/douglasbarbosadelima/event-emitter.manager.svg"
+         alt="Dependency Status">
+  </a>
+ <a href="https://www.npmjs.com/package/event-emitter-manager">
+    <img src="https://img.shields.io/npm/v/event-emitter-manager.svg?style=flat-square"
+      alt="NPM Version">
+  </a>
+  <a href="https://www.npmjs.org/package/event-emitter-manager">
+    <img src="http://img.shields.io/npm/dm/event-emitter-manager.svg?style=flat-square"
+      alt="Downloads">
+  </a>
+</p>
+
 # event-emitter-manager
 This package will provide auxiliary method's to manage EventEmitter and avoid possible Memory Leak problem.
 
