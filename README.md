@@ -11,7 +11,7 @@ This package will provide auxiliary method's to manage EventEmitter and avoid po
  npm run test
  ```
 
- -Run coverage Report:
+ - Run coverage Report:
  ```bash
  npm run coverage
  ```
