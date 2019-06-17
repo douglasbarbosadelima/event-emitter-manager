@@ -5,6 +5,16 @@ This package will provide auxiliary method's to manage EventEmitter and avoid po
  ```js
   const ManageEmitter = require('event-emitter-manager')()
  ```
+
+ - Run unit Test's:
+ ``` bash
+ npm run test
+ ```
+
+ -Run coverage Report:
+ ```bash
+ npm run coverage
+ ```
  
  - Usage:
 ```js
