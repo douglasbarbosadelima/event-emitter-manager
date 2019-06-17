@@ -12,7 +12,8 @@ const manageEmitter = new ManageEmitter({
   inspect: true, // Auto-start the ManageEmitter verification.
   reportSeconds: 3000, // Time to next verification of Listeners OPENED.
   actionOnWarning: true, // Increase maxListeners on Warning Status.
-  increment: 10 // Quantity of memory increased.
+  increment: 10, // Quantity of memory increased.
+  showConsoleInspect: true // Show evaluation of verifications on reportSeconds time into Console Application. The default is false
 });
 ```
 

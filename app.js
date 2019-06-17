@@ -2,8 +2,8 @@ const chalk = require('chalk');
 
 class ManageEmitter {
     
-    constructor({ inspect, reportSeconds, actionOnWarning, increment }){
-        if(inspect) this.manage(reportSeconds, actionOnWarning, increment);
+    constructor({ inspect, reportSeconds, actionOnWarning, increment, showConsoleInspect }){
+        if(inspect) this.manage(reportSeconds, actionOnWarning, increment, showConsoleInspect);
         this.monitor;
     }
 
@@ -40,13 +40,13 @@ class ManageEmitter {
       return;
     }
 
-    manage(seconds = 5000, actionOnWarning, increment = 10){
+    manage(seconds = 5000, actionOnWarning, increment = 10, showConsoleInspect = false){
       this.monitor = setInterval(() => {
         const limit = this.getMaxListeners();
         const countProcess = this.listCountProcess();
 
         if((limit - countProcess) > 3){
-          console.log(chalk.green(`ManageEmitter STATUS: Everything is fine`));
+          if(showConsoleInspect) console.log(chalk.green(`ManageEmitter STATUS: Everything is fine`));
         }         
 
         if((limit - countProcess) < 3 && (limit - countProcess) > 1){

@@ -1,6 +1,6 @@
 {
   "name": "event-emitter-manager",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "This package will provide auxiliary method's to manage EventEmitter and avoid possible Memory Leak problem.",
   "main": "app.js",
   "scripts": {
