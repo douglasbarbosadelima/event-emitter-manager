@@ -1,14 +1,16 @@
 {
   "name": "event-emitter-manager",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "This package will provide auxiliary method's to manage EventEmitter and avoid possible Memory Leak problem.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/index.js"
   },
   "author": "Douglas Barbosa de Lima",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.2"
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "mocha": "^6.1.4"
   }
 }

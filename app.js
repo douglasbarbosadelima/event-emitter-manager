@@ -24,10 +24,15 @@ class ManageEmitter {
     }
 
     setLimitListener(n){
+        console.log(n);
         try {
-            process.setMaxListeners(n);
-            console.log(chalk.green(`You limit was increased to ${n}.`));
-            return
+            if(n || n > -1){
+                process.setMaxListeners(n);
+                console.log(chalk.green(`You limit was increased to ${n}.`));
+                return `You limit was increased to ${n}.`;
+            }
+
+            return new Error('The argument {n} is required');
         }
         catch(e){
             throw new Error(e);
@@ -37,7 +42,7 @@ class ManageEmitter {
     setLimitLess(){
       process.setMaxListeners(0);
       console.log(chalk.yellow('PAY ATENTION!\nThis action don\'t are recommend, but your process has been executed.\nTo don\'t have problems with Listeners, fix unecessary events.'));
-      return;
+      return `Your process was set to don't have a limit.`;
     }
 
     manage(seconds = 5000, actionOnWarning, increment = 10, showConsoleInspect = false){
